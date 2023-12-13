@@ -4,10 +4,8 @@ import Grid from "@mui/material/Grid";
 import searchBackground2 from "../../images/searchBackground2.jpg";
 import Paper from "@mui/material/Paper";
 import InputBase from "@mui/material/InputBase";
-import Typography from "@mui/material/Typography";
 import { ThemeProvider } from "@mui/material/styles";
 import Button from "@mui/material/Button";
-import Link from "@mui/material/Link";
 import { theme } from "../../theme/Theme";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -68,6 +66,7 @@ const SearchBar = () => {
               <InputBase
                 sx={{ ml: 1, flex: 1 }}
                 placeholder="Search business"
+                value={searchTerm}
                 onChange={handleSearchTermChange}
               />
             </Paper>
@@ -85,6 +84,7 @@ const SearchBar = () => {
               <InputBase
                 sx={{ ml: 1, flex: 1 }}
                 placeholder="Where?"
+                value={location}
                 onChange={handleLocationChange}
               />
             </Paper>

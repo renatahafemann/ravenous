@@ -4,7 +4,8 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
 export default function BusinessList() {
-  //const [businesses, setBusinesses] = useState([]);
+  const [data, setData] = useState([]);
+  
 
   const businesses = [0, 1, 2, 3, 4, 5];
 

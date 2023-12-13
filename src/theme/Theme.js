@@ -2,13 +2,14 @@ import { createTheme } from "@mui/material/styles";
 
 export const theme = createTheme({
   typography: {
-    body1: {
-      color: "white",
-      fontWeight: "bold",
-      textAlign: "center",
-    },
     gold: {
       color: "#CAAE0C",
+      fontWeight: "bold",
+    },
+    goldUppercase: {
+      color: "#CAAE0C",
+      fontWeight: "bold",
+      textTransform: "uppercase",
     },
   },
   components: {
@@ -16,10 +17,11 @@ export const theme = createTheme({
       styleOverrides: {
         root: {
           color: "white",
-          fontWeight: "bold",
-          '&.Mui-selected': {
-            color: '#CAAE0C',
-          }
+          fontSize: 16,
+          "&.Mui-selected": {
+            color: "#CAAE0C",
+          },
+          textTransform: "none",
         },
       },
     },
@@ -28,9 +30,8 @@ export const theme = createTheme({
         indicator: {
           backgroundColor: "#CAAE0C",
         },
-        }, 
-        
       },
+    },
   },
   palette: {
     gold: {
