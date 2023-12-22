@@ -1,0 +1,1 @@
+export const yelpApiKey = 'IQXZlDBYcwrdLxwmMpbQCecaqXrV5tW8W22h3ue9Nu5YMHw2OKayiCpPGajLLxTk06zRtzvFhPM6nWaEeHq9b9xxI7zQES1mqoYa_EY6BYXhV20sTH87l9ax9d95ZXYx';

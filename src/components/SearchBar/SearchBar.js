@@ -9,8 +9,9 @@ import Button from "@mui/material/Button";
 import { theme } from "../../theme/Theme";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import { fetchYelpData } from "../../utils/Yelp";
 
-const SearchBar = () => {
+const SearchBar = ({setDataFromSearch}) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [location, setLocation] = useState("");
   const [sortBy, setSortBy] = useState("best_match");
@@ -26,6 +27,16 @@ const SearchBar = () => {
   const handleChange = (event, newValue) => {
     setSortBy(newValue);
   };
+
+  const handleSearch = async (event) => {
+    event.preventDefault();
+    if (location) {
+      const data = await fetchYelpData(location, searchTerm, sortBy);
+      setDataFromSearch(data);
+    } else {
+      alert("Please enter a location");
+    }
+  };  
 
   return (
     <ThemeProvider theme={theme}>
@@ -90,7 +101,7 @@ const SearchBar = () => {
             </Paper>
           </Grid>
         </Grid>
-        <Button variant="contained" color="gold" sx={{ m: 4 }} onClick={() => alert(sortBy)}>
+        <Button variant="contained" color="gold" sx={{ m: 4 }} onClick={handleSearch}>
           Let's Go
         </Button>
       </Box>

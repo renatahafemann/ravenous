@@ -17,37 +17,37 @@ const defaultBusiness = {
   reviewCount: 90,
 };
 
-export default function Business() {
+export default function Business({business}) {
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ width: 280 }}>
         <img
-          src={defaultBusiness.imageSrc}
+          src={business.image_url}
           alt="restaurant info"
           width={280}
           height={280}
         />
         <Typography variant="h6" sx={{ fontWeight: "bold" }}>
-          {defaultBusiness.name}
+          {business.name}
         </Typography>
         <Grid container sx={{ justifyContent: "space-between" }}>
-          <Grid item xs={8}>
+          <Grid item xs={6}>
             <Typography variant="body2">
-              {defaultBusiness.address}
+              {business.location.address1}
               <br />
-              {defaultBusiness.city}
+              {business.location.city}
               <br />
-              {defaultBusiness.state} {defaultBusiness.zipCode}
+              {business.location.state} {business.location.zip_code}
             </Typography>
           </Grid>
-          <Grid item sx={{ textAlign: "right" }}>
+          <Grid item xs={6} sx={{ textAlign: "right" }}>
             <Typography variant="goldUppercase">
-              {defaultBusiness.category}
+              {business.categories[0].title}
             </Typography>
             <br />
-            <Typography variant="gold">4.5 stars</Typography>
+            <Typography variant="gold">{business.rating} stars</Typography>
             <br />
-            <Typography variant="body2">90 reviews</Typography>
+            <Typography variant="body2">{business.review_count} reviews</Typography>
           </Grid>
         </Grid>
       </Box>
