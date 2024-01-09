@@ -21,10 +21,10 @@ Tech stack includes HTML, CSS, JavaScript, React and Material UI.
 
 ### Sneak peek
 Welcome page
-![welcome page](src\images\welcomePage.jpg)
+![welcome page](src/images/welcomePage.jpg)
   
 Search example
-![search example](src\images\searchExample.jpg)
+![search example](src/images/searchExample.jpg)
   
 Responsive example  
-![responsive example](src\images\responsiveExample.jpg)
+![responsive example](src/images/responsiveExample.jpg)
