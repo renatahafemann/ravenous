@@ -19,7 +19,7 @@ Tech stack includes HTML, CSS, JavaScript, React and Material UI.
   npm install  
   npm start   
 
-### Sneak peek
+## Sneak peek
 Welcome page
 ![welcome page](src/images/welcomePage.jpg)
   
