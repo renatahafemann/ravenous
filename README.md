@@ -2,6 +2,7 @@
 
 Small project part of my Create a front-end app with React course at Codecademy.  
 Ravenous is a business recommendation website that allows users to search for local businesses based on their location and keywords by using the Yelp API.
+Tech stack includes HTML, CSS, JavaScript, React and Material UI.
 
 ## Steps to run the app
 ### Requirements
