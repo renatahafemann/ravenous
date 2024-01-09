@@ -18,6 +18,7 @@ export const theme = createTheme({
         root: {
           color: "white",
           fontSize: 16,
+          fontWeight: "bold",
           "&.Mui-selected": {
             color: "#CAAE0C",
           },

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Business from "../Business/Business";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";

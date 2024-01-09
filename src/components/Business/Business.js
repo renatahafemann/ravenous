@@ -5,18 +5,6 @@ import Typography from "@mui/material/Typography";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "../../theme/Theme";
 
-const defaultBusiness = {
-  imageSrc: "https://content.codecademy.com/programs/react/ravenous/pizza.jpg",
-  name: "MarginOtto Pizzeria",
-  address: "1010 Paddington Way",
-  city: "Flavortown",
-  state: "NY",
-  zipCode: "10101",
-  category: "Italian",
-  rating: 4.5,
-  reviewCount: 90,
-};
-
 export default function Business({business}) {
   return (
     <ThemeProvider theme={theme}>
