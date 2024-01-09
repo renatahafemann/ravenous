@@ -18,4 +18,13 @@ Tech stack includes HTML, CSS, JavaScript, React and Material UI.
 * In the integrated terminal, use the following commands (one at a time):  
   npm install  
   npm start   
+
+### Sneak peek
+Welcome page
+![welcome page](src\images\welcomePage.jpg)
   
+Search example
+![search example](src\images\searchExample.jpg)
+  
+Responsive example  
+![responsive example](src\images\responsiveExample.jpg)
